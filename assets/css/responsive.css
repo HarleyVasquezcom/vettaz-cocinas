@@ -1,0 +1,131 @@
+/* ==========================================================================
+   VETTAZ COCINAS INTEGRALES - RESPONSIVE STYLES
+   ========================================================================== */
+
+/* Wide Desktops */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Desktops & Laptops */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-container {
+    min-height: 300px;
+  }
+}
+
+/* Tablets & Mobile Navigation */
+@media (max-width: 768px) {
+  .top-bar {
+    display: none; /* Hide topbar on mobile for cleaner layout */
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: var(--color-aqua-dark);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2.5rem 2rem;
+    gap: 1.5rem;
+    transition: var(--transition);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero {
+    min-height: 70vh;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .cta-banner {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .cta-banner h2 {
+    font-size: 1.8rem;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+}

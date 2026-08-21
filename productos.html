@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos | Vettaz Cocinas Integrales</title>
+  <meta name="description" content="Explora nuestro catálogo completo de cocinas integrales modernas, clásicas, minimalistas, closets, baños y muebles para hogar en Bogotá.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-info">
+        <a href="tel:+573000000000"><i class="fas fa-phone"></i> +57 300 000 0000</a>
+        <a href="mailto:info@vettazcocinas.com"><i class="fas fa-envelope"></i> info@vettazcocinas.com</a>
+        <span><i class="fas fa-location-dot"></i> Calle 100 # 15-30, Bogotá</span>
+      </div>
+      <div class="top-bar-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">V</div>
+        <div class="logo-text">
+          VETTAZ
+          <span>Cocinas Integrales</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="productos.html" class="nav-link active">Productos</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="contacto.html" class="btn btn-cta btn-sm">Cotizar Ahora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb Banner -->
+  <section class="breadcrumb-banner">
+    <div class="container">
+      <h1>Catálogo de Productos</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Inicio</a>
+        <span class="separator">/</span>
+        <span>Productos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Main Content -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <span class="text-script">Diseño & Variedad</span>
+        <h2 class="section-title">Explora Nuestras Colecciones</h2>
+        <p class="section-subtitle">Encuentra el estilo perfecto para renovar tu cocina, habitaciones y áreas sociales.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-buttons" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="cocinas">Cocinas Integrales</button>
+        <button class="filter-btn" data-filter="closets">Closets & Vestidores</button>
+        <button class="filter-btn" data-filter="banos">Baños</button>
+        <button class="filter-btn" data-filter="sala">Muebles de Sala</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="gallery-grid">
+        <div class="filterable-item product-card" data-category="cocinas" data-aos="fade-up">
+          <div class="product-image-wrap">
+            <img src="assets/images/productos/cocina-moderna.svg" alt="Cocina Moderna" loading="lazy">
+            <span class="product-badge">Popular</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Cocinas Integrales</span>
+            <h3 class="product-title">Cocina Moderna</h3>
+            <p class="product-desc">Islas funcionales, iluminación LED perimetral y acabados mate o alto brillo.</p>
+            <div class="product-footer">
+              <a href="productos/cocina-moderna.html" class="btn btn-outline-aqua btn-sm">Ver Detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="filterable-item product-card" data-category="cocinas" data-aos="fade-up">
+          <div class="product-image-wrap">
+            <img src="assets/images/productos/cocina-clasica.svg" alt="Cocina Clásica" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-category">Cocinas Integrales</span>
+            <h3 class="product-title">Cocina Clásica</h3>
+            <p class="product-desc">Elegancia atemporal con detalles en molduras de madera y tonos cálidos tradicionalmente finos.</p>
+            <div class="product-footer">
+              <a href="productos/cocina-clasica.html" class="btn btn-outline-aqua btn-sm">Ver Detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="filterable-item product-card" data-category="cocinas" data-aos="fade-up">
+          <div class="product-image-wrap">
+            <img src="assets/images/productos/cocina-minimalista.svg" alt="Cocina Minimalista" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-category">Cocinas Integrales</span>
+            <h3 class="product-title">Cocina Minimalista</h3>
+            <p class="product-desc">Geometría pura, frentes lisos sin tirantes visibles y máxima sensación de amplitud.</p>
+            <div class="product-footer">
+              <a href="productos/cocina-minimalista.html" class="btn btn-outline-aqua btn-sm">Ver Detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="filterable-item product-card" data-category="cocinas" data-aos="fade-up">
+          <div class="product-image-wrap">
+            <img src="assets/images/productos/cocina-rustica.svg" alt="Cocina Rústica" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-category">Cocinas Integrales</span>
+            <h3 class="product-title">Cocina Rústica Chic</h3>
+            <p class="product-desc">Texturas naturales en madera maciza combinadas con tecnologías modernas de herrajes.</p>
+            <div class="product-footer">
+              <a href="productos/cocina-rustica.html" class="btn btn-outline-aqua btn-sm">Ver Detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="filterable-item product-card" data-category="cocinas" data-aos="fade-up">
+          <div class="product-image-wrap">
+            <img src="assets/images/productos/cocina-industrial.svg" alt="Cocina Industrial" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-category">Cocinas Integrales</span>
+            <h3 class="product-title">Cocina Industrial Loft</h3>
+            <p class="product-desc">Combinación vanguardista de acero, madera natural y acentos en negro mate.</p>
+            <div class="product-footer">
+              <a href="productos/cocina-industrial.html" class="btn btn-outline-aqua btn-sm">Ver Detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="filterable-item product-card" data-category="closets" data-aos="fade-up">
+          <div class="product-image-wrap">
+            <img src="assets/images/productos/closets.svg" alt="Closets y Vestidores" loading="lazy">
+            <span class="product-badge badge-price">Tendencia</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Almacenamiento</span>
+            <h3 class="product-title">Closets & Vestidores</h3>
+            <p class="product-desc">Espacios optimizados con cajoneras ocultas, iluminación sensor y pantaloneros.</p>
+            <div class="product-footer">
+              <a href="productos/closets.html" class="btn btn-outline-aqua btn-sm">Ver Detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="filterable-item product-card" data-category="banos" data-aos="fade-up">
+          <div class="product-image-wrap">
+            <img src="assets/images/productos/banos.svg" alt="Muebles de Baño" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-category">Mobiliario de Baño</span>
+            <h3 class="product-title">Muebles de Baño Modernos</h3>
+            <p class="product-desc">Vanities suspendidos en materiales RH (resistentes a la humedad) con espejos LED.</p>
+            <div class="product-footer">
+              <a href="productos/banos.html" class="btn btn-outline-aqua btn-sm">Ver Detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="filterable-item product-card" data-category="sala" data-aos="fade-up">
+          <div class="product-image-wrap">
+            <img src="assets/images/productos/muebles-sala.svg" alt="Muebles de Sala" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-category">Áreas Sociales</span>
+            <h3 class="product-title">Centros de Entretenimiento</h3>
+            <p class="product-desc">Paneles de televisión con listas alistonadas y almacenamiento para sistemas de sonido.</p>
+            <div class="product-footer">
+              <a href="productos/muebles-sala.html" class="btn btn-outline-aqua btn-sm">Ver Detalles <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="container section-padding">
+    <div class="cta-banner" data-aos="zoom-in">
+      <h2>¿Buscas un Diseño Completamente Personalizado?</h2>
+      <p>Nuestros asesores técnicos se adaptan al espacio y presupuesto exacto de tu proyecto.</p>
+      <a href="contacto.html" class="btn btn-cta"><i class="fas fa-headset"></i> Hablar con un Asesor</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom: 1.2rem;">
+          <div class="logo-icon">V</div>
+          <div class="logo-text">
+            VETTAZ
+            <span>Cocinas Integrales</span>
+          </div>
+        </a>
+        <p class="footer-desc">Especialistas en diseño, fabricación e instalación de cocinas integrales en Bogotá y Cundinamarca.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Productos</h3>
+        <ul class="footer-links">
+          <li><a href="productos/cocina-moderna.html"><i class="fas fa-angle-right"></i> Cocina Moderna</a></li>
+          <li><a href="productos/cocina-clasica.html"><i class="fas fa-angle-right"></i> Cocina Clásica</a></li>
+          <li><a href="productos/cocina-minimalista.html"><i class="fas fa-angle-right"></i> Cocina Minimalista</a></li>
+          <li><a href="productos/closets.html"><i class="fas fa-angle-right"></i> Closets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Servicios</h3>
+        <ul class="footer-links">
+          <li><a href="servicios/diseno.html"><i class="fas fa-angle-right"></i> Diseño 3D</a></li>
+          <li><a href="servicios/fabricacion.html"><i class="fas fa-angle-right"></i> Fabricación</a></li>
+          <li><a href="servicios/instalacion.html"><i class="fas fa-angle-right"></i> Instalación</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> <span>Calle 100 # 15-30, Bogotá</span></li>
+          <li><i class="fas fa-phone"></i> <span>+57 300 000 0000</span></li>
+          <li><i class="fas fa-envelope"></i> <span>info@vettazcocinas.com</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Vettaz Cocinas Integrales. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573000000000?text=Hola%20Vettaz%20Cocinas" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

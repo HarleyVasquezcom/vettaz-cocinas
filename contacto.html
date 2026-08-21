@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Cotizaciones | Vettaz Cocinas Integrales</title>
+  <meta name="description" content="Ponte en contacto con Vettaz Cocinas Integrales en Bogotá. Solicita cotización gratuita, visita técnica o asesoría en diseño.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-info">
+        <a href="tel:+573000000000"><i class="fas fa-phone"></i> +57 300 000 0000</a>
+        <a href="mailto:info@vettazcocinas.com"><i class="fas fa-envelope"></i> info@vettazcocinas.com</a>
+        <span><i class="fas fa-location-dot"></i> Calle 100 # 15-30, Bogotá</span>
+      </div>
+      <div class="top-bar-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">V</div>
+        <div class="logo-text">
+          VETTAZ
+          <span>Cocinas Integrales</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="productos.html" class="nav-link">Productos</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="contacto.html" class="nav-link active">Contacto</a>
+        <a href="contacto.html" class="btn btn-cta btn-sm">Cotizar Ahora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb Banner -->
+  <section class="breadcrumb-banner">
+    <div class="container">
+      <h1>Contacto y Asesoría</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Inicio</a>
+        <span class="separator">/</span>
+        <span>Contacto</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info Grid -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center" data-aos="fade-up">
+        <span class="text-script">Atención Personalizada</span>
+        <h2 class="section-title">Estamos Listos para Atenderte</h2>
+        <p class="section-subtitle">Déjanos tus datos o contáctanos directamente para coordinar la toma de medidas o cotizar tu proyecto.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form" data-aos="fade-right">
+          <h3 style="margin-bottom: 1.5rem; color: var(--color-aqua);">Formulario de Cotización</h3>
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre Completo *</label>
+              <input type="text" id="nombre" class="form-control" placeholder="Ej. Ana María Rodríguez" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo Electrónico *</label>
+              <input type="email" id="email" class="form-control" placeholder="tu-email@ejemplo.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono / WhatsApp *</label>
+              <input type="tel" id="telefono" class="form-control" placeholder="+57 300 000 0000" required>
+            </div>
+
+            <div class="form-group">
+              <label for="tipo_proyecto">Tipo de Proyecto</label>
+              <select id="tipo_proyecto" class="form-control">
+                <option value="cocina">Cocina Integral Nueva</option>
+                <option value="remodelacion">Remodelación de Cocina</option>
+                <option value="closet">Closet / Vestidor</option>
+                <option value="bano">Muebles de Baño</option>
+                <option value="otro">Mobiliario General para Hogar</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Detalles del Proyecto *</label>
+              <textarea id="mensaje" class="form-control" placeholder="Indícanos medidas aproximadas, sector de Bogotá o Cundinamarca y preferencias de estilo..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-cta" style="width: 100%;"><i class="fas fa-paper-plane"></i> Enviar Solicitar Cotización</button>
+          </form>
+        </div>
+
+        <!-- Info & Map -->
+        <div data-aos="fade-left" style="display: flex; flex-direction: column; gap: 2rem;">
+          <div class="service-card">
+            <h3 style="color: var(--color-aqua); margin-bottom: 1.2rem;">Información Directa</h3>
+            <ul class="footer-contact" style="color: var(--color-text);">
+              <li><i class="fas fa-map-marker-alt" style="font-size: 1.2rem;"></i> <div><strong>Dirección:</strong><br>Calle 100 # 15-30, Bogotá, Colombia</div></li>
+              <li><i class="fas fa-phone" style="font-size: 1.2rem;"></i> <div><strong>Teléfonos de atención:</strong><br>+57 300 000 0000 / (601) 745 0000</div></li>
+              <li><i class="fas fa-envelope" style="font-size: 1.2rem;"></i> <div><strong>Correo General:</strong><br>info@vettazcocinas.com</div></li>
+              <li><i class="fas fa-clock" style="font-size: 1.2rem;"></i> <div><strong>Horario de Atención:</strong><br>Lunes a Sábado: 8:00 am – 6:00 pm</div></li>
+            </ul>
+          </div>
+
+          <!-- Google Maps Embedded (Bogotá) -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4950337894576!2d-74.0535!3d4.685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab26f9df0ed%3A0x8dd0879611be2e15!2sCl.%20100%20%2315-30%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación Vettaz Cocinas Bogotá">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom: 1.2rem;">
+          <div class="logo-icon">V</div>
+          <div class="logo-text">
+            VETTAZ
+            <span>Cocinas Integrales</span>
+          </div>
+        </a>
+        <p class="footer-desc">Cocinas integrales y muebles a medida en Bogotá, Colombia.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Productos</h3>
+        <ul class="footer-links">
+          <li><a href="productos/cocina-moderna.html"><i class="fas fa-angle-right"></i> Cocina Moderna</a></li>
+          <li><a href="productos/closets.html"><i class="fas fa-angle-right"></i> Closets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Servicios</h3>
+        <ul class="footer-links">
+          <li><a href="servicios/diseno.html"><i class="fas fa-angle-right"></i> Diseño 3D</a></li>
+          <li><a href="servicios/instalacion.html"><i class="fas fa-angle-right"></i> Instalación</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> <span>Calle 100 # 15-30, Bogotá</span></li>
+          <li><i class="fas fa-phone"></i> <span>+57 300 000 0000</span></li>
+          <li><i class="fas fa-envelope"></i> <span>info@vettazcocinas.com</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Vettaz Cocinas Integrales. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573000000000?text=Hola%20Vettaz%20Cocinas" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
