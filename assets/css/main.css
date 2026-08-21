@@ -1,0 +1,199 @@
+/* ==========================================================================
+   VETTAZ COCINAS INTEGRALES - MAIN STYLES
+   ========================================================================== */
+
+:root {
+  /* === COLORES PRINCIPALES === */
+  --color-aqua:        #0097A7;   /* Azul agua-marina — header, navbar, textos de acento */
+  --color-aqua-dark:   #006978;   /* Azul agua-marina oscuro — hover navbar, footer */
+  --color-aqua-light:  #4DD0E1;   /* Azul agua-marina claro — highlights y bordes activos */
+
+  /* === BOTONES CTA === */
+  --color-cta:         #F5A000;   /* Naranja — botones principales */
+  --color-cta-hover:   #E08C00;   /* Naranja oscuro — hover de botones CTA */
+
+  /* === PRECIOS Y ALERTAS === */
+  --color-price:       #E8293A;   /* Rojo — precios en oferta */
+
+  /* === NEUTROS === */
+  --color-background:  #FFFFFF;
+  --color-surface:     #F8F9FA;
+  --color-text:        #222222;
+  --color-text-light:  #666666;
+  --color-border:      #E0E0E0;
+  --color-white:       #FFFFFF;
+  --color-shadow:      rgba(0, 0, 0, 0.08);
+
+  /* === TIPOGRAFÍAS === */
+  --font-heading: 'Playfair Display', serif;
+  --font-script:  'Dancing Script', cursive;
+  --font-body:    'Lato', sans-serif;
+
+  /* === BORDES Y TRANSICIONES === */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --transition: all 0.3s ease;
+  --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Base resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  line-height: 1.25;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-aqua);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-aqua-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Layout Containers */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding {
+  padding: 5rem 0;
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+/* Typography Helpers */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-aqua { color: var(--color-aqua); }
+.text-script { font-family: var(--font-script); color: var(--color-aqua); font-size: 1.8rem; display: block; margin-bottom: 0.2rem; }
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.section-subtitle {
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-cta {
+  background-color: var(--color-cta);
+  color: var(--color-white);
+}
+
+.btn-cta:hover {
+  background-color: var(--color-cta-hover);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(245, 160, 0, 0.3);
+}
+
+.btn-aqua {
+  background-color: var(--color-aqua);
+  color: var(--color-white);
+}
+
+.btn-aqua:hover {
+  background-color: var(--color-aqua-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.btn-outline-aqua {
+  background-color: transparent;
+  border-color: var(--color-aqua);
+  color: var(--color-aqua);
+}
+
+.btn-outline-aqua:hover {
+  background-color: var(--color-aqua);
+  color: var(--color-white);
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.btn-outline-white:hover {
+  background-color: var(--color-white);
+  color: var(--color-aqua-dark);
+}
+
+.btn-sm {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.875rem;
+}
