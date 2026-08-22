@@ -782,7 +782,7 @@ textarea.form-control {
 .product-gallery-slider {
   position: relative !important;
   width: 500px;
-  height: 100%;
+  height: 500px;
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-card);
