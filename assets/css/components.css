@@ -523,7 +523,7 @@
 
 .contact-grid > * {
   min-width: 0;
-  max-width: 100%;
+  max-width: 1192px;
   overflow: hidden;
 }
 
@@ -789,8 +789,8 @@ textarea.form-control {
 /* === SWIPER PRODUCT GALLERY ENHANCEMENTS === */
 .product-gallery-slider {
   position: relative !important;
-  width: 100% !important;
-  max-width: 100% !important;
+  width: 1192px !important;
+  max-width: 1192px !important;
   height: 500px;
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -803,8 +803,8 @@ textarea.form-control {
 }
 
 .product-gallery-slider .swiper-slide {
-  width: 100% !important;
-  max-width: 100% !important;
+  width: 1192px !important;
+  max-width: 1192px !important;
   height: 500px;
   overflow: hidden;
   box-sizing: border-box;
