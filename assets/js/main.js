@@ -73,10 +73,11 @@ function initSwiperSliders() {
     if (document.querySelector('.product-gallery-slider')) {
       new Swiper('.product-gallery-slider', {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 0,
         loop: true,
         observer: true,
         observeParents: true,
+        resizeObserver: true,
         autoplay: {
           delay: 4000,
           disableOnInteraction: false,
