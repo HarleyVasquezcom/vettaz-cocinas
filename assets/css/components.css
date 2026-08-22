@@ -780,8 +780,8 @@ textarea.form-control {
 
 /* ===== PRODUCT GALLERY SWIPER FIX ===== */
 .product-gallery-slider {
-  height: 100% !important;
-  max-height: 100% !important;
+  height: 500% !important;
+  max-height: 500% !important;
 }
 
 .product-gallery-slider .swiper-wrapper {
