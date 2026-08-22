@@ -781,7 +781,7 @@ textarea.form-control {
 /* === SWIPER PRODUCT GALLERY ENHANCEMENTS === */
 .product-gallery-slider {
   position: relative !important;
-  width: 100%;
+  width: 500px;
   height: 100%;
   border-radius: var(--radius-md);
   overflow: hidden;
