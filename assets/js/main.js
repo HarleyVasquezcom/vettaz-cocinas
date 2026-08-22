@@ -75,6 +75,8 @@ function initSwiperSliders() {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
+        observer: true,
+        observeParents: true,
         autoplay: {
           delay: 4000,
           disableOnInteraction: false,
