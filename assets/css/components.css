@@ -777,26 +777,3 @@ textarea.form-control {
   color: var(--color-white);
   border-color: var(--color-aqua);
 }
-
-/* ===== PRODUCT GALLERY SWIPER FIX ===== */
-.product-gallery-slider {
-  height: 500% !important;
-  max-height: 500% !important;
-}
-
-.product-gallery-slider .swiper-wrapper {
-  height: 100% !important;
-}
-
-.product-gallery-slider .swiper-slide {
-  height: 100% !important;
-  overflow: hidden !important;
-}
-
-.product-gallery-slider .swiper-slide img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-  max-height: 100% !important;
-}
