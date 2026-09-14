@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize Mobile Menu
   initMobileMenu();
 
+  // Initialize Hero Crossfade Slider
+  initHeroSlider();
+
   // Initialize AOS (Animate on Scroll)
   if (typeof AOS !== 'undefined') {
     AOS.init({
@@ -206,4 +209,18 @@ function initFaqAccordion() {
       }
     });
   });
+}
+
+
+/* Hero Crossfade Slider (Change every 3 seconds) */
+function initHeroSlider() {
+  const slides = document.querySelectorAll('.hero-slide');
+  if (slides.length > 1) {
+    let currentIndex = 0;
+    setInterval(() => {
+      slides[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % slides.length;
+      slides[currentIndex].classList.add('active');
+    }, 3000);
+  }
 }
