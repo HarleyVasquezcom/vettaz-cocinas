@@ -3,40 +3,36 @@
    ========================================================================== */
 
 :root {
-  /* === COLORES PRINCIPALES === */
-  --color-aqua:        #0097A7;   /* Azul agua-marina — header, navbar, textos de acento */
-  --color-aqua-dark:   #006978;   /* Azul agua-marina oscuro — hover navbar, footer */
-  --color-aqua-light:  #4DD0E1;   /* Azul agua-marina claro — highlights y bordes activos */
+  /* === COLORES PRINCIPALES MARCA VETTAZ === */
+  --color-primary:     #2C3649;   /* Azul Principal Vettaz (Fondo Azul) */
+  --color-aqua:        #2C3649;   /* Azul principal */
+  --color-aqua-dark:   #1E2638;   /* Azul oscuro hover / footer */
+  --color-aqua-light:  #4A5874;   /* Azul claro highlights y bordes */
 
-  /* === BOTONES CTA === */
-  --color-cta:         #F5A000;   /* Naranja — botones principales */
-  --color-cta-hover:   #E08C00;   /* Naranja oscuro — hover de botones CTA */
+  /* === COLOR SECUNDARIO === */
+  --color-secondary:   #3C3C3B;   /* Gris 90% Vettaz (Fondo Gris) */
+
+  /* === BOTONES CTA Y ACENTOS === */
+  --color-cta:         #C80A0A;   /* Rojo Vettaz — Acento oficial del logo */
+  --color-cta-hover:   #A50808;   /* Rojo Vettaz Hover */
+  --color-accent:      #C80A0A;   /* Rojo acento */
 
   /* === PRECIOS Y ALERTAS === */
-  --color-price:       #E8293A;   /* Rojo — precios en oferta */
+  --color-price:       #C80A0A;   /* Rojo Vettaz */
 
   /* === NEUTROS === */
-  --color-background:  #FFFFFF;
+  --color-background:  #FFFFFF;   /* Blanco Base */
   --color-surface:     #F8F9FA;
-  --color-text:        #222222;
+  --color-text:        #3C3C3B;   /* Gris secundario para texto */
   --color-text-light:  #666666;
   --color-border:      #E0E0E0;
   --color-white:       #FFFFFF;
   --color-shadow:      rgba(0, 0, 0, 0.08);
 
   /* === TIPOGRAFÍAS === */
-  --font-heading: 'Playfair Display', serif;
-  --font-script:  'Dancing Script', cursive;
-  --font-body:    'Lato', sans-serif;
-
-  /* === BORDES Y TRANSICIONES === */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
-  --radius-full: 9999px;
-  --transition: all 0.3s ease;
-  --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.05);
-  --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.12);
+  --font-heading: 'Montserrat', sans-serif;
+  --font-script:  'Montserrat', sans-serif;
+  --font-body:    'Montserrat', 'Lato', sans-serif;
 }
 
 /* Base resets */
@@ -118,7 +114,11 @@ ul, ol {
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-aqua { color: var(--color-aqua); }
-.text-script { font-family: var(--font-script); color: var(--color-aqua); font-size: 1.8rem; display: block; margin-bottom: 0.2rem; }
+.text-script { font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--color-cta); color: var(--color-aqua); font-size: 1.8rem; display: block; margin-bottom: 0.2rem; }
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
