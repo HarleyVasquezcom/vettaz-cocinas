@@ -224,3 +224,39 @@ function initHeroSlider() {
     }, 3000);
   }
 }
+
+
+/* Register Service Worker & PWA Install Prompt */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').then(reg => {
+      console.log('ServiceWorker registered:', reg.scope);
+    }).catch(err => {
+      console.log('ServiceWorker registration failed:', err);
+    });
+  });
+}
+
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+
+  // Create or show App Install Button if container exists
+  const installBanner = document.getElementById('pwa-install-banner');
+  if (installBanner) {
+    installBanner.style.display = 'flex';
+  }
+});
+
+function installPwaApp() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted PWA install');
+      }
+      deferredPrompt = null;
+    });
+  }
+}
