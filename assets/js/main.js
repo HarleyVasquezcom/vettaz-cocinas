@@ -221,7 +221,7 @@ function initHeroSlider() {
       slides[currentIndex].classList.remove('active');
       currentIndex = (currentIndex + 1) % slides.length;
       slides[currentIndex].classList.add('active');
-    }, 3000);
+    }, 4000);
   }
 }
 
