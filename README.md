@@ -82,6 +82,6 @@ vettaz-cocinas/
 
 - **Empresa**: Vettaz Cocinas Integrales
 - **Ciudad**: Bogotá, Colombia
-- **Dirección**: Calle 100 # 15-30, Bogotá
-- **Teléfono / WhatsApp**: +57 300 000 0000
+- **Dirección**: CR 17 58A 31 - Chapinero, Bogotá D.C
+- **Teléfono / WhatsApp**: +57 316 615 6226 (@giobolvar)
 - **Correo**: info@vettazcocinas.com
