@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../assets/css/components.css">
   <link rel="stylesheet" href="../assets/css/responsive.css">
+  <!-- Favicon & PWA Manifest -->
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="theme-color" content="#2C3649">
 </head>
 <body>
 
@@ -24,14 +30,15 @@
   <div class="top-bar">
     <div class="container">
       <div class="top-bar-info">
-        <a href="tel:+573166156226"><i class="fas fa-phone"></i> +57 316 615 6226</a>
+        <a href="tel:+573166156226"><i class="fas fa-phone"></i> +57 (316) 615-6226</a>
         <a href="mailto:info@vettazcocinas.com"><i class="fas fa-envelope"></i> info@vettazcocinas.com</a>
-        <span><i class="fas fa-location-dot"></i> CR 17 58A 31 - Chapinero, Bogotá D.C</span>
+        <span><i class="fas fa-location-dot"></i> Cr 17 58a 31 - Chapinero, Bogotá</span>
       </div>
       <div class="top-bar-social">
         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+      <button onclick="installPwaApp()" id="pwa-install-btn" class="btn btn-cta btn-sm" style="margin-left: 0.8rem; font-size: 0.75rem; padding: 0.25rem 0.6rem; border: none; cursor: pointer; border-radius: 4px; display: inline-flex; align-items: center; gap: 0.3rem;"><i class="fas fa-mobile-alt"></i> Instalar App</button>
       </div>
     </div>
   </div>
@@ -152,7 +159,7 @@
             </div>
             <div class="form-group">
               <label for="telefono_p">Teléfono / WhatsApp *</label>
-              <input type="tel" id="telefono_p" class="form-control" placeholder="+57 316 615 6226" required>
+              <input type="tel" id="telefono_p" class="form-control" placeholder="+57 (316) 615-6226" required>
             </div>
           </div>
           <div class="form-group">
@@ -246,8 +253,8 @@
       <div class="footer-col">
         <h3>Contacto</h3>
         <ul class="footer-contact">
-          <li><i class="fas fa-map-marker-alt"></i> <span>CR 17 58A 31 - Chapinero, Bogotá D.C</span></li>
-          <li><i class="fas fa-phone"></i> <span>+57 316 615 6226</span></li>
+          <li><i class="fas fa-map-marker-alt"></i> <span>Cr 17 58a 31 - Chapinero, Bogotá</span></li>
+          <li><i class="fas fa-phone"></i> <span>+57 (316) 615-6226</span></li>
           <li><i class="fas fa-envelope"></i> <span>info@vettazcocinas.com</span></li>
           <li><i class="fas fa-clock"></i> <span>Lun - Sáb: 8:00am – 6:00pm</span></li>
         </ul>
