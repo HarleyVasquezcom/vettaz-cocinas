@@ -45,9 +45,9 @@
   <!-- Header -->
   <header class="header">
     <div class="container navbar">
-      <a href="index.html" class="logo-brand-wrapper" style="display: inline-flex; flex-direction: column; align-items: stretch; text-decoration: none; width: 175px;">
-        <img src="assets/images/brand/vettaz-wordmark-light.png" alt="VETTAZ" style="width: 100%; height: auto; display: block;">
-        <div class="logo-brand-tagline" style="display: flex; justify-content: space-between; align-items: center; font-size: 0.58rem; font-weight: 700; color: #C80A0A; text-transform: uppercase; letter-spacing: 0.2px; margin-top: 3px; white-space: nowrap;">
+      <a href="index.html" class="logo-brand-wrapper" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; width: 100%; max-width: 180px; margin: 0 auto;">
+        <img src="assets/images/brand/vettaz-wordmark-light.png" alt="VETTAZ" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        <div class="logo-brand-tagline" style="width: 100%; display: flex; justify-content: space-between; align-items: center; font-size: 0.58rem; font-weight: 700; color: #C80A0A; text-transform: uppercase; letter-spacing: 0.2px; margin-top: 3px; white-space: nowrap; text-align: center;">
           <span>Cocinas Integrales</span>
           <span style="color: #FFFFFF; font-weight: 900; margin: 0 2px;">|</span>
           <span>Mobiliario Interior</span>
@@ -91,36 +91,43 @@
         <!-- Contact Form -->
         <div class="contact-form" data-aos="fade-right">
           <h3 style="margin-bottom: 1.5rem; color: var(--color-aqua);">Formulario de Cotización</h3>
-          <form class="needs-validation" novalidate>
+          <form action="https://formsubmit.co/mobiliariointeriorvettaz@gmail.com" method="POST" class="contact-form needs-validation" novalidate>
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_subject" value="Nueva Solicitud de Cotización - Vettaz Cocinas Integrales">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
             <div class="form-group">
               <label for="nombre">Nombre Completo *</label>
-              <input type="text" id="nombre" class="form-control" placeholder="Ej. Ana María Rodríguez" required>
+              <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej. Ana María Rodríguez" required>
             </div>
 
             <div class="form-group">
               <label for="email">Correo Electrónico *</label>
-              <input type="email" id="email" class="form-control" placeholder="tu-email@ejemplo.com" required>
+              <input type="email" id="email" name="email" class="form-control" placeholder="tu-email@ejemplo.com" required>
             </div>
 
             <div class="form-group">
               <label for="telefono">Teléfono / WhatsApp *</label>
-              <input type="tel" id="telefono" class="form-control" placeholder="+57 (316) 615-6226" required>
+              <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="+57 (316) 615-6226" required>
             </div>
 
             <div class="form-group">
               <label for="tipo_proyecto">Tipo de Proyecto</label>
-              <select id="tipo_proyecto" class="form-control">
-                <option value="cocina">Cocina Integral Nueva</option>
-                <option value="remodelacion">Remodelación de Cocina</option>
-                <option value="closet">Closet / Vestidor</option>
-                <option value="bano">Muebles de Baño</option>
-                <option value="otro">Mobiliario General para Hogar</option>
+              <select id="tipo_proyecto" name="tipo_proyecto" class="form-control">
+                <option value="Cocina Integral">Cocina Integral</option>
+                <option value="Closet / Vestidor">Closet / Vestidor</option>
+                <option value="Mueble de Baño">Mueble de Baño</option>
+                <option value="Centro de Entretenimiento / TV">Centro de Entretenimiento / TV</option>
+                <option value="Muebles de Oficina">Muebles de Oficina</option>
+                <option value="Mesón (Granito / Quarztone / Sinterizado)">Mesón (Granito / Quarztone / Sinterizado)</option>
+                <option value="Remodelación Completa">Remodelación Completa</option>
               </select>
             </div>
 
             <div class="form-group">
               <label for="mensaje">Detalles del Proyecto *</label>
-              <textarea id="mensaje" class="form-control" placeholder="Indícanos medidas aproximadas, sector de Bogotá o Cundinamarca y preferencias de estilo..." required></textarea>
+              <textarea id="mensaje" name="mensaje" class="form-control" placeholder="Indícanos medidas aproximadas, sector de Bogotá o Cundinamarca y preferencias de estilo..." required></textarea>
             </div>
 
             <button type="submit" class="btn btn-cta" style="width: 100%;"><i class="fas fa-paper-plane"></i> Enviar Solicitar Cotización</button>
@@ -159,9 +166,9 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-col">
-        <a href="index.html" class="logo-brand-wrapper" style="display: inline-flex; flex-direction: column; align-items: stretch; text-decoration: none; width: 175px;">
-        <img src="assets/images/brand/vettaz-wordmark-light.png" alt="VETTAZ" style="width: 100%; height: auto; display: block;">
-        <div class="logo-brand-tagline" style="display: flex; justify-content: space-between; align-items: center; font-size: 0.58rem; font-weight: 700; color: #C80A0A; text-transform: uppercase; letter-spacing: 0.2px; margin-top: 3px; white-space: nowrap;">
+        <a href="index.html" class="logo-brand-wrapper" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-decoration: none; width: 100%; max-width: 180px; margin: 0 auto;">
+        <img src="assets/images/brand/vettaz-wordmark-light.png" alt="VETTAZ" style="width: 100%; height: auto; display: block; object-fit: contain;">
+        <div class="logo-brand-tagline" style="width: 100%; display: flex; justify-content: space-between; align-items: center; font-size: 0.58rem; font-weight: 700; color: #C80A0A; text-transform: uppercase; letter-spacing: 0.2px; margin-top: 3px; white-space: nowrap; text-align: center;">
           <span>Cocinas Integrales</span>
           <span style="color: #FFFFFF; font-weight: 900; margin: 0 2px;">|</span>
           <span>Mobiliario Interior</span>

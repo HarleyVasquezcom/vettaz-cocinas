@@ -119,14 +119,12 @@ function initSwiperSliders() {
   }
 }
 
-/* Contact Form Validation */
+/* Contact Form Validation with FormSubmit Integration */
 function initFormValidation() {
   const forms = document.querySelectorAll('form.needs-validation');
 
   forms.forEach(form => {
     form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
       let isValid = true;
       const requiredInputs = form.querySelectorAll('[required]');
 
@@ -134,58 +132,25 @@ function initFormValidation() {
         if (!input.value.trim()) {
           isValid = false;
           input.classList.add('is-invalid');
-          input.style.borderColor = '#E8293A';
+          input.style.borderColor = '#C80A0A';
         } else {
           input.classList.remove('is-invalid');
           input.style.borderColor = '#E0E0E0';
         }
       });
 
-      if (isValid) {
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-
-        setTimeout(() => {
-          alert('¡Gracias por contactarnos! Un asesor de Vettaz Cocinas Integrales se comunicará contigo pronto.');
-          form.reset();
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalText;
-        }, 1200);
-      } else {
+      if (!isValid) {
+        e.preventDefault();
         alert('Por favor completa todos los campos requeridos.');
+      } else {
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando a Vettaz...';
+        }
       }
     });
   });
-}
-
-/* Category Filter for Products / Gallery */
-function initCategoryFilters() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const items = document.querySelectorAll('.filterable-item');
-
-  if (filterBtns.length > 0 && items.length > 0) {
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
-        // Active button style
-        filterBtns.forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-
-        const filterValue = this.getAttribute('data-filter');
-
-        items.forEach(item => {
-          if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-            item.style.display = 'block';
-            item.style.animation = 'fadeIn 0.5s ease forward';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-      });
-    });
-  }
 }
 
 /* FAQ Accordion */
